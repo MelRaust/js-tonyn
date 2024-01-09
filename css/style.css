@@ -15,14 +15,25 @@ section::before{
     left: 0;
     right: 0;
 }
+#title{
+    opacity: 0;
+    transition: all .2s;
+    position: relative;
+}
 .stepinner{
     position: relative;
     width: 100%;
     margin: auto;
     padding: 20px;
     text-align: center;
+    opacity: 0;
+    transition: all .5s;
+    position: relative;
+   
 }
-.next{
+.play{
+    
+    z-index: 99;
     position: fixed;
     right: 20px;
     width: 50px;
@@ -37,18 +48,66 @@ section::before{
 .icon{
     width: 60%;
     height: 60%;
+    cursor: pointer;
 }
+.Step1{
+    background-color: blue;
+    background-image: url(../images/theophile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    opacity: 0;
+    transition: all .800s;
+    position: relative;
+    top: -20;
+}
+.Step2{
+    background-color: rgb(41, 34, 145);
+    background-image: url(../images/jeune-fille.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    height: 700px; 
+}
+.Step3{
+    background-color: green;
+    background-image: url(../images/autreguitare.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+    height: 700px; 
+}
+.Step4{
+    background-color: red;
+    background-image: url(../images/champs.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+    height: 800px; 
+}
+.Step5{
+    background-color: purple;
+    background-image: url(../images/paris-ma.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px; 
+    margin-bottom: 0px;
+}
+
+
+
 .Step1::before{
     background-color: blue;
     background-image: url(../images/theophile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 700px;
 }
 .Step2::before{
     background-color: rgb(41, 34, 145);
     background-image: url(../images/jeune-fille.jpg);
     background-size: cover;
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;  
+    height: 700px; 
 }
 .Step3::before{
     background-color: green;
@@ -56,6 +115,7 @@ section::before{
     background-size: cover;
     background-repeat: no-repeat;  
     background-position: center;
+    height: 700px; 
 }
 .Step4::before{
     background-color: red;
@@ -63,9 +123,15 @@ section::before{
     background-size: cover;
     background-repeat: no-repeat;  
     background-position: center;
+    height: 800px; 
 }
 .Step5::before{
     background-color: purple;
+    background-image: url(../images/paris-ma.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px; 
+    margin-bottom: 0px;
 }
 h2{
     margin-bottom: 40px;
@@ -76,5 +142,9 @@ p{
     margin-bottom: 20px;
 }
 
+.Step2, .Step3, .Step4, .Step5{
+  display: none;
+}
+@media (max-width:670px){
 
-
+}
