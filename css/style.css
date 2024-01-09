@@ -25,29 +25,24 @@ section{
 }
 .Step1{
     background-color: blue;
-    flex-direction: column;
     background-image: url(../images/theophile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 .Step2{
     background-color: rgb(41, 34, 145);
-    flex-direction: column;
     background-image: url(../images/jeune-fille.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 .Step3{
     background-color: green;
-    flex-direction: column;
 }
 .Step4{
     background-color: red;
-    flex-direction: column;
 }
 .Step5{
     background-color: purple;
-    flex-direction: column;
     height: 750px;
 }
 h2{
@@ -61,4 +56,10 @@ p{
 .poeme{
     max-width: 600px;
     text-align: center;
+    margin: auto;
 }
+.poeme2{
+    margin: auto;
+}
+
+
