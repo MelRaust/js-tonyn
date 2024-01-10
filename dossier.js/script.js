@@ -1,4 +1,8 @@
-
+function play() {
+    const audio = document.getElementById("audio");
+    audio.volume = 0.3;
+    
+  }
 function step1(){ 
     let step1 = document.getElementById('step1')
     let stepinner1 = document.getElementById('stepinner1')
@@ -97,4 +101,5 @@ function start(){
     step3();
     step4();
     step5();
+    audio.play();
 }
