@@ -4,8 +4,11 @@ function step1(){
     let stepinner1 = document.getElementById('stepinner1')
     let title = document.getElementById('title')
     step1.style.opacity = 1;
+    step1.style.bottom = 0
     step1.transition = "2s"
     stepinner1.style.opacity = 1;
+    stepinner1.style.left = 0
+    stepinner1.transition = "2s"
     title.style.opacity = 1;
     title.style.top = 0
     title.transition = "2s" 
