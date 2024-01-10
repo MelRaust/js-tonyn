@@ -1,11 +1,11 @@
 section{
-    background-color: gray;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     width: 100%;
     height: 100vh;
+    position: fixed;
 }
 section::before{
     content:"";
@@ -15,11 +15,7 @@ section::before{
     left: 0;
     right: 0;
 }
-#title{
-    opacity: 0;
-    transition: all .2s;
-    position: relative;
-}
+
 .stepinner{
     position: relative;
     width: 100%;
@@ -66,7 +62,11 @@ section::before{
     background-image: url(../images/jeune-fille.jpg);
     background-size: cover;
     background-repeat: no-repeat;  
-    height: 700px; 
+    height: 700px;
+    opacity: 0; 
+    transition: all .800s;
+    position: relative;
+    top: -20;
 }
 .Step3{
     background-color: green;
@@ -75,6 +75,10 @@ section::before{
     background-repeat: no-repeat;  
     background-position: center;
     height: 700px; 
+    opacity: 0;
+    transition: all .800s;
+    position: relative;
+    top: -20;
 }
 .Step4{
     background-color: red;
@@ -83,6 +87,10 @@ section::before{
     background-repeat: no-repeat;  
     background-position: center;
     height: 800px; 
+    opacity: 0;
+    transition: all .800s;
+    position: relative;
+    top: -20;
 }
 .Step5{
     background-color: purple;
@@ -91,6 +99,10 @@ section::before{
     background-repeat: no-repeat;
     height: 600px; 
     margin-bottom: 0px;
+    opacity: 0;
+    transition: all .800s;
+    position: relative;
+    top: -20;
 }
 
 
@@ -137,14 +149,12 @@ h2{
     margin-bottom: 40px;
     color: yellow;
     font-size: 24px;
+    top: -50px;
+    position: relative;
+    transition: all 4s;
 }
 p{
     margin-bottom: 20px;
 }
 
-.Step2, .Step3, .Step4, .Step5{
-  display: none;
-}
-@media (max-width:670px){
 
-}
